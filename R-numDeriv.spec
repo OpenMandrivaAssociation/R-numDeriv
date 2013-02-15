@@ -1,14 +1,16 @@
 %global packname  numDeriv
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          2010.11_1
+Version:          2012.9.1
 Release:          1
 Summary:          Accurate Numerical Derivatives
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_2010.11-1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/numDeriv_2012.9-1.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 
 %description
@@ -35,7 +37,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %doc %{rlibdir}/%{packname}/DESCRIPTION
 %doc %{rlibdir}/%{packname}/NEWS
 %{rlibdir}/%{packname}/INDEX
-%{rlibdir}/%{packname}/LICENSE
+#%{rlibdir}/%{packname}/LICENSE
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
@@ -47,4 +49,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 776320
 - Import R-numDeriv
 - Import R-numDeriv
+
 
