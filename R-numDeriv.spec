@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          2012.9.1
-Release:          2
+Release:          3
 Summary:          Accurate Numerical Derivatives
 Group:            Sciences/Mathematics
 License:          GPL-2
